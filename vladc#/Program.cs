@@ -4,10 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Я утром сел писать программу,\nИ когда написал не мало.");
-            Console.WriteLine("Вдруг компилятор мне сказал:\n\"Ошибка здесь\" - и указал.\nЯ долго баг потом искал,");
-            Console.WriteLine("Но все же код свой дописал.");
-            Console.WriteLine("Теперь программа без проблем\nРаботает на радость всем."); 
+            string text = "Вася - Учиеть програмироваия ";
+            int number = 30;
+            Double number2 = 7.6;
+            char symbol = '@';
+            bool result = true;
+            //зделали парочку переменных
+            Console.WriteLine(text + "ему " + number + ".\nОн работает " + number2 + " лет\nЕго любимый символ - " + symbol);
+            Console.WriteLine("Есть ли у него питомец? - " + result);
+            string text2 = Console.ReadLine();
+            Console.WriteLine("Привет! " + text2);
+            
+
         }
     }
 }
