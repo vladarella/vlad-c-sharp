@@ -8,13 +8,13 @@
             int number = 30;
             Double number2 = 7.6;
             char symbol = '@';
-            bool result = true;
+             bool result = true;
             //зделали парочку переменных
-            Console.WriteLine(text + "ему " + number + ".\nОн работает " + number2 + " лет\nЕго любимый символ - " + symbol);
+             Console.WriteLine(text + "ему " + number + ".\nОн работает " + number2 + " лет\nЕго любимый символ - " + symbol);
             Console.WriteLine("Есть ли у него питомец? - " + result);
-            
-            
-
+            string text2 = Console.ReadLine();
+            Console.WriteLine("Привет !" + text2);
+                                                                                                 
         }
     }
 }
