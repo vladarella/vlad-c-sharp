@@ -19,19 +19,24 @@
             int age = int.Parse(Console.ReadLine());
 
             Console.Write("На ваше усмотрение какой самый красивый символ?");
-            char symbol = Convert.ToChar(Console.ReadLine());
+            char symbol = char.Parse(Console.ReadLine());
 
-            Console.Write("Сегодня хорошая погода?");
-            bool result = Convert.ToBoolean(Console.ReadLine());
-
-            Console.Write("Который час?");
-            double number = double.Parse(Console.ReadLine());
+            Console.Write("Вы любите програмированрие?");
+             string answer = (Console.ReadLine());
+            bool result;
+            if (answer == "да" || answer == "yes")
+                result = true;
+            else if (answer == "нет" || answer == "no")
+                result = false;
 
             Console.WriteLine($"Ваше имя - {name}");
             Console.WriteLine($"Вам {age} лет");
             Console.WriteLine($"Ваш любимый символ - {symbol}");
-            Console.WriteLine($"{result}");
-            Console.WriteLine($"{number}");
+            if (answer == "да") Console.WriteLine(" Да вы любите програмирование");
+            else if (answer == "нет") Console.WriteLine("Нет вы не любите програмирование"); 
+            
+            
+
         }
     }
 }
