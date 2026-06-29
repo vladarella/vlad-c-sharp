@@ -4,39 +4,33 @@
     {
         static void Main(string[] args)
         {
-            //string text = "Вася - Учиеть програмироваия ";
-            //int number = 30;
-            //Double number2 = 7.6;
-            //char symbol = '@';
-            //bool result = true;
-            //зделали парочку переменных
-            //Console.WriteLine(text + "ему " + number + ".\nОн работает " + number2 + " лет\nЕго любимый символ - " + symbol);
-            //Console.WriteLine("Есть ли у него питомец? - " + result);
-            Console.Write("Введите ваше имя. ");
-            string name = Console.ReadLine();
+            //Первая задача
+            //Console.Write("Введите первое число: ");
+            //int x = int.Parse(Console.ReadLine());
+            //Console.Write("Введите второе число: ");
+            //int y = int.Parse(Console.ReadLine());
+            //Console.WriteLine($"Решим пример  - (a + b):2 Подставляем первое и второе числа и получаеться = {(double)(x + y)/(2)}");
 
-            Console.Write("Сколько вам лет?");
-            int age = int.Parse(Console.ReadLine());
+            //Вторая задача
+            //Console.Write("Введите первое число: ");
+            //int A = int.Parse(Console.ReadLine());
+            //Console.Write("Введите второе число: ");
+            //int B = int.Parse(Console.ReadLine());
+            //Console.Write("Введите третье число: ");
+            //int C = int.Parse(Console.ReadLine());
+            //Console.WriteLine($"Решим пример - (a*b):3 + c Подставляем первое второе и третье числа и получаеться = {(double)(A*B)/3 + C}");
 
-            Console.Write("На ваше усмотрение какой самый красивый символ?");
-            char symbol = char.Parse(Console.ReadLine());
-
-            Console.Write("Вы любите програмированрие?");
-             string answer = (Console.ReadLine());
-            bool result;
-            if (answer == "да" || answer == "yes")
-                result = true;
-            else if (answer == "нет" || answer == "no")
-                result = false;
-
-            Console.WriteLine($"Ваше имя - {name}");
-            Console.WriteLine($"Вам {age} лет");
-            Console.WriteLine($"Ваш любимый символ - {symbol}");
-            if (answer == "да") Console.WriteLine(" Да вы любите програмирование");
-            else if (answer == "нет") Console.WriteLine("Нет вы не любите програмирование"); 
-            
-            
-
+            //Третья задача
+            Console.Write("Введите первое число: ");
+            int A = int.Parse(Console.ReadLine());
+            Console.Write("Введите второе число: ");
+            int B = int.Parse(Console.ReadLine());
+            Console.Write("Введите третье число: ");
+            int C = int.Parse(Console.ReadLine());
+            Console.Write("Введите четвертое число: ");
+            int D = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Решим пример - ((a*b):2 + (c*d)):3 Подставляем первое второе третье и четвертое числа и получаеться = ");
+            Console.WriteLine($"{(double)((A*B/2) + (C*D))/3}");
         }
     }
 }
