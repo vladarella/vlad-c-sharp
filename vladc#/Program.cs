@@ -6,68 +6,44 @@ namespace vladc_
     {
         static void Main(string[] args)
         {
-            //1
-            //Console.Write("Введите четырехзначное число ");
+            //Console.Write("Введите положительное число: ");
+
             //int number;
-            //while (!int.TryParse(Console.ReadLine(), out number) || number < 1000 || number > 9999)
+
+            //while (!int.TryParse(Console.ReadLine(), out number) || number <= 0)
             //{
-            //    Console.WriteLine("Ошибка! Введите четырехзначное число: ");
-
+            //    Console.Write("Введите положительное число: ");
             //}
+
+            //// Пасхалка
+            //if (number == 67)
+            //{
+            //    Console.WriteLine("Уважаю тех, кто знает этот мем ");
+            //}
+
             //int count = 0;
-            //int digit = number % 10;
-            //if (digit % 2 == 0)
+
+            //while (number > 0)
+            //{
             //    count++;
+            //    number /= 10;
+            //}
 
-            //digit = (number / 10) % 10;
-            //if (digit % 2 == 0)
-            //    count++;
-
-            //digit = (number / 100) % 10;
-            //if (digit % 2 == 0)
-            //    count++;
-
-            //digit = (number / 1000) % 10;
-            //if (digit % 2 == 0)
-            //    count++;
-
-            //Console.WriteLine($"Количество четных цыфр {count}");
-
-            //2 не знаю
+            //Console.WriteLine($"Количество цифр = {count}");
 
 
+            //2  не знаю 
+            Console.Write("Введите положительное число: ");
 
+            int number;
 
-
-            //3
-            string password = "78945";
-
-            int attempts = 0;
-
-            while (attempts < 5)
+            while (!int.TryParse(Console.ReadLine(), out number) || number <= 0)
             {
-                Console.Write("Введите пароль: ");
-                string input = Console.ReadLine();
-
-                if (input == password)
-                {
-                    Console.WriteLine("Добро пожаловать!");
-                    break;
-                }
-                else
-                {
-                    attempts++;
-
-                    if (attempts == 5)
-                    {
-                        Console.WriteLine("Ага , попытался меня взломать - не выйдет ,доступ запрешен!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Неверный пароль. Попробуйте еще.");
-                    }
-                }
+                Console.Write("Введите положительное число: ");
             }
+
+            //3 не знаю
+
         }
     }
 }
