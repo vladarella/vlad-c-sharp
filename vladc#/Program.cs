@@ -6,19 +6,19 @@ namespace vladc_
     {
         static void Main(string[] args)
         {
-            //Console.Write("Введите положительное число: ");
+            //console.write("введите положительное число: ");
 
             //int number;
 
-            //while (!int.TryParse(Console.ReadLine(), out number) || number <= 0)
+            //while (!int.tryparse(console.readline(), out number) || number <= 0)
             //{
-            //    Console.Write("Введите положительное число: ");
+            //    console.write("введите положительное число: ");
             //}
 
-            //// Пасхалка
+            //// пасхалка
             //if (number == 67)
             //{
-            //    Console.WriteLine("Уважаю тех, кто знает этот мем ");
+            //    console.writeline("уважаю тех, кто знает этот мем ");
             //}
 
             //int count = 0;
@@ -29,10 +29,37 @@ namespace vladc_
             //    number /= 10;
             //}
 
-            //Console.WriteLine($"Количество цифр = {count}");
+            //console.writeline($"количество цифр = {count}");
 
 
-            //2  не знаю 
+            //2   
+            //console.write("введите положительное число: ");
+
+            //int number;
+
+            //while (!int.tryparse(console.readline(), out number) || number <= 0)
+            //{
+            //    console.write("введите положительное число!!! ");
+            //}
+
+            //int max = 0;
+
+            //while (number > 0)
+            //{
+            //    int digit = number % 10;
+
+            //    if (digit > max)
+            //    {
+            //        max = digit;
+            //    }
+
+            //    number /= 10;
+            //}
+
+            //console.writeline($"самая большая цифра = {max}");
+
+
+            //3 
             Console.Write("Введите положительное число: ");
 
             int number;
@@ -42,8 +69,24 @@ namespace vladc_
                 Console.Write("Введите положительное число: ");
             }
 
-            //3 не знаю
+            int first = number;
+            int obratno = 0;
 
+            while (number > 0)
+            {
+                int digit = number % 10;
+                obratno = obratno * 10 + digit;
+                number /= 10;
+            }
+
+            if (first == obratno)
+            {
+                Console.WriteLine("Число является палиндромом.");
+            }
+            else
+            {
+                Console.WriteLine("Число не является палиндромом.");
+            }
         }
     }
 }
