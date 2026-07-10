@@ -33,41 +33,78 @@ namespace vladc_
 
             //Console.WriteLine($"Количество четных цыфр {count}");
 
-            //2 не знаю
+            //2 
+            Console.Write("Введите положительное число: ");
 
+            int number;
+
+            while (!int.TryParse(Console.ReadLine(), out number) || number <= 0)
+            {
+                Console.Write("Введите положительное число: ");
+            }
+
+            int Digit2 = number % 10;
+            number /= 10;
+
+            int count = 1;
+            int max = 1;
+
+            while (number > 0)
+            {
+                int digit = number % 10;
+
+                if (digit == Digit2)
+                {
+                    count++;
+
+                    if (count > max)
+                    {
+                        max = count;
+                    }
+                }
+                else
+                {
+                    count = 1;
+                }
+
+                Digit2 = digit;
+                number /= 10;
+            }
+
+            Console.WriteLine($"Максимальная серия одинаковых цифр = {max}");
 
 
 
 
             //3
-            string password = "78945";
+            //string password = "78945";
 
-            int attempts = 0;
+            //int attempts = 0;
 
-            while (attempts < 5)
-            {
-                Console.Write("Введите пароль: ");
-                string input = Console.ReadLine();
+            //while (attempts < 5)
+            //{
+            //    Console.Write("Введите пароль: ");
+            //    string input = Console.ReadLine();
 
-                if (input == password)
-                {
-                    Console.WriteLine("Добро пожаловать!");
-                    break;
-                }
-                else
-                {
-                    attempts++;
+            //    if (input == password)
+            //    {
+            //        Console.WriteLine("Добро пожаловать!");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        attempts++;
 
-                    if (attempts == 5)
-                    {
-                        Console.WriteLine("Ага , попытался меня взломать - не выйдет ,доступ запрешен!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Неверный пароль. Попробуйте еще.");
-                    }
-                }
-            }
+            //        if (attempts == 5)
+            //        {
+            //            Console.WriteLine("Ага , попытался меня взломать - не выйдет ,доступ запрешен!");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Неверный пароль. Попробуйте еще.");
+            //        }
+            //    }
+            //}
         }
     }
 }
